@@ -140,7 +140,7 @@ public class Pos_txt_Reader1 : MonoBehaviour
 
         GetInitInfo();
 
-        localEndPoint = new IPEndPoint(IPAddress.Parse("192.168.55.90"), _port);
+        localEndPoint = new IPEndPoint(IPAddress.Parse("IP본인것입력"), _port);
         listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         listener.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true); //?
         listener.Connect(localEndPoint);
